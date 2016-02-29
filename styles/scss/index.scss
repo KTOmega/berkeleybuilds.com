@@ -4,37 +4,43 @@ html, body {
     margin: 0px;
     padding: 0px;
     background-color: red;
+    font-family: "adelle",serif;
 }
 
 a {
-    color: white;
+    color: #003262;
 }
 
 a:link{
     text-decoration: none;
 }
 
+a:active {
+    text-decoration: underline;
+}
+
 #header {
     height: 60px;
-    background-color: blue;
+    background-color: white;
     width: 100%;
     display: flex; 
     align-items: center;
-    color: white;
     padding: 5px;
     position: fixed;
 
     #h-tabs{ 
        margin-left: auto;
        text-align: right;
+       margin-right: 30px;
     }
 
     .h-tab{
         margin-right: 10px;
+        font-size: 24px;
     }
 
     #h-title{
-        font-size: 24px;
+        font-size: 30px;
     }
 }
 
@@ -54,18 +60,17 @@ a:link{
 
 .p-header{
     font-size: 30px;
+    color: white;
 }
 
 .p-content{
     margin: auto;
-    background-color: white;
     p {
         font-size: 20px;
     }
 }
 
 .p-gallary{
-    background-color: white;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; 
@@ -86,29 +91,31 @@ a:link{
 
 #p-cover {
     height: 400px;
-    background-color: green;
+    background-color: #36C1EA;
 }
 
 #p-about {
-    background-color: yellow;
+    background-color: #B25800;
+    color: white;
     .p-content {
         width: 50%;
     }
 }
 
 #p-students{
-    background-color: orange;
+    background-color: #50728b;
 }
 
 #p-sponsors {
-    background-color: purple;
+    background-color: #ec5a43;
     .p-gallary .p-gallary-item {
-        background-color: grey;
+        background-color: #6c7175;
     }
 }
 
 #p-contact{
-    background-color: gray;
+    background-color: #6c7175;
+    color: white;
 }
 
 /* Media Queries */

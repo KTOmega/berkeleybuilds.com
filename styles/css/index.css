@@ -1,30 +1,35 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  background-color: red; }
+  background-color: red;
+  font-family: "adelle",serif; }
 
 a {
-  color: white; }
+  color: #003262; }
 
 a:link {
   text-decoration: none; }
 
+a:active {
+  text-decoration: underline; }
+
 #header {
   height: 60px;
-  background-color: blue;
+  background-color: white;
   width: 100%;
   display: flex;
   align-items: center;
-  color: white;
   padding: 5px;
   position: fixed; }
   #header #h-tabs {
     margin-left: auto;
-    text-align: right; }
+    text-align: right;
+    margin-right: 30px; }
   #header .h-tab {
-    margin-right: 10px; }
-  #header #h-title {
+    margin-right: 10px;
     font-size: 24px; }
+  #header #h-title {
+    font-size: 30px; }
 
 .content {
   width: 100%;
@@ -39,16 +44,15 @@ a:link {
   padding-right: 40px; }
 
 .p-header {
-  font-size: 30px; }
+  font-size: 30px;
+  color: white; }
 
 .p-content {
-  margin: auto;
-  background-color: white; }
+  margin: auto; }
   .p-content p {
     font-size: 20px; }
 
 .p-gallary {
-  background-color: white;
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around; }
@@ -66,23 +70,25 @@ a:link {
 
 #p-cover {
   height: 400px;
-  background-color: green; }
+  background-color: #36C1EA; }
 
 #p-about {
-  background-color: yellow; }
+  background-color: #B25800;
+  color: white; }
   #p-about .p-content {
     width: 50%; }
 
 #p-students {
-  background-color: orange; }
+  background-color: #50728b; }
 
 #p-sponsors {
-  background-color: purple; }
+  background-color: #ec5a43; }
   #p-sponsors .p-gallary .p-gallary-item {
-    background-color: grey; }
+    background-color: #6c7175; }
 
 #p-contact {
-  background-color: gray; }
+  background-color: #6c7175;
+  color: white; }
 
 /* Media Queries */
 @media (max-width: 540px) {
