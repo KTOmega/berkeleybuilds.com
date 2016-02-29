@@ -74,7 +74,6 @@ a:link{
 .p-gallary-item {
     width: 200px;
     height: 200px;
-    background-color: grey;
     display: flex;
     align-items: center;
     text-align: center;
@@ -92,6 +91,9 @@ a:link{
 
 #p-about {
     background-color: yellow;
+    .p-content {
+        width: 50%;
+    }
 }
 
 #p-students{
@@ -100,6 +102,9 @@ a:link{
 
 #p-sponsors {
     background-color: purple;
+    .p-gallary .p-gallary-item {
+        background-color: grey;
+    }
 }
 
 #p-contact{
@@ -111,6 +116,12 @@ a:link{
 @media (max-width: 540px) {
     #h-tabs {
         display: none;
+    }
+}
+
+@media (max-width: 700px) {
+    #p-about .p-content {
+        width: 80%;
     }
 }
 
