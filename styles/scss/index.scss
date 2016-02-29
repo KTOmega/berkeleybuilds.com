@@ -1,0 +1,93 @@
+@import "bourbon/bourbon";
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+a {
+    color: white;
+}
+
+a:link{
+    text-decoration: none;
+}
+
+#header {
+    height: 60px;
+    background-color: blue;
+    width: 100%;
+    display: flex; 
+    align-items: center;
+    color: white;
+    padding: 5px;
+    position: fixed;
+
+    #h-tabs{ 
+       margin-left: auto;
+       text-align: right;
+    }
+
+    .h-tab{
+        margin-right: 10px;
+    }
+
+    #h-title{
+        font-size: 24px;
+    }
+}
+
+
+.panel {
+    width: 100%;
+    min-height: 250px;
+}
+
+.p-header{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+}
+
+#p-cover {
+    background-color: green;
+    height: 400px;
+}
+
+#p-about {
+    background-color: yellow;
+}
+
+#p-students{
+    background-color: orange;
+}
+
+#p-sponsors {
+    background-color: purple;
+}
+
+#p-contact{
+    background-color: gray;
+}
+
+/* Media Queries */
+
+@media (max-width: 540px) {
+    .h-tabs {
+        display: none;
+    }
+}
+
+/* Animation Classes */
+
+/*.fade-in{
+    @include animation-name(fade-in);
+    @include animation-duration(1s);
+}*/
+
+/* Keyframes */
+
+/*@keyframes fade-in {
+    from: {background: rgba(0,0,255,0)}
+    to: {background: rgba(0, 0, 255, 1)}
+}*/
