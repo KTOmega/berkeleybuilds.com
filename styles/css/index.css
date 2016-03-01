@@ -14,7 +14,7 @@ a:active {
   text-decoration: underline; }
 
 #header {
-  height: 60px;
+  height: 45px;
   background-color: white;
   width: 100%;
   display: flex;
@@ -70,7 +70,14 @@ a:active {
 
 #p-cover {
   height: 400px;
-  background-color: #36C1EA; }
+  background-color: #36C1EA;
+  padding: 0px !important; }
+  #p-cover img {
+    max-height: 100%;
+    width: 50%; }
+  #p-cover #p-cover-title {
+    width: 50%;
+    background-color: red; }
 
 #p-about {
   background-color: #B25800;
@@ -84,7 +91,10 @@ a:active {
 #p-sponsors {
   background-color: #ec5a43; }
   #p-sponsors .p-gallary .p-gallary-item {
+    color: white;
     background-color: #6c7175; }
+    #p-sponsors .p-gallary .p-gallary-item a:link {
+      text-decoration: underline; }
 
 #p-contact {
   background-color: #6c7175;
