@@ -15,12 +15,15 @@ a:active {
 
 #header {
   height: 45px;
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0);
   width: 100%;
   display: flex;
   align-items: center;
   padding: 5px;
-  position: fixed; }
+  position: fixed;
+  -webkit-transition: background-color 0.25s;
+  -moz-transition: background-color 0.25s;
+  transition: background-color 0.25s; }
   #header #h-tabs {
     margin-left: auto;
     text-align: right;
@@ -114,16 +117,6 @@ a:active {
     width: 80%; } }
 /* Animation Classes */
 .fade-in {
-  -webkit-animation-name: fade-in;
-  -moz-animation-name: fade-in;
-  animation-name: fade-in;
-  -webkit-animation-duration: 1s;
-  -moz-animation-duration: 1s;
-  animation-duration: 1s; }
-
-/* Keyframes */
-@keyframes fade-in {
-  from-background: transparent;
-  to-background: black; }
+  background-color: white !important; }
 
 /*# sourceMappingURL=index.css.map */
