@@ -1,6 +1,18 @@
 ## berkeleybuilds.com
 
-[berkeleybuilds.com](berkeleybuilds.com)
+berkeleybuilds.com
+
+## TODO
+
+* [ ] Edit and use the real Build Berkeley logo for cover photo
+
+* [ ] Shorten the *About* description (a lot)
+
+* [ ] Underline selected tabs in navbar
+
+* [ ] Remove background colors for student group logos (?)
+
+* [ ] Favicon
 
 
 ## Developers
