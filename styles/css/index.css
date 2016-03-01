@@ -77,15 +77,16 @@ a:active {
   height: 400px;
   background-color: #CFE2F3;
   padding: 0px !important;
+  display: flex;
   flex-direction: row;
-  flex-wrap: wrap; }
-  #p-cover img {
-    max-height: 100%;
-    width: 50%; }
-  #p-cover #p-cover-title {
-    width: 50%;
-    display: flex;
-    align-items: center; }
+  justify-content: center;
+  align-items: center; }
+  #p-cover #img-container {
+    height: 200px;
+    width: 200px; }
+    #p-cover #img-container img {
+      max-height: 100%;
+      max-width: 100%; }
 
 #p-about {
   background-color: #FF825B;
