@@ -1,11 +1,7 @@
 html, body {
   margin: 0px;
   padding: 0px;
-  background-color: red;
   font-family: "Lato",serif; }
-
-a {
-  color: #003262; }
 
 a:link {
   text-decoration: none; }
@@ -24,6 +20,11 @@ a:active {
   -webkit-transition: background-color 0.25s;
   -moz-transition: background-color 0.25s;
   transition: background-color 0.25s; }
+  #header a {
+    color: #51738d;
+    -webkit-transition: color 0.25s;
+    -moz-transition: color 0.25s;
+    transition: color 0.25s; }
   #header #h-tabs {
     margin-left: auto;
     text-align: right;
@@ -79,20 +80,59 @@ a:active {
   padding: 0px !important;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center; }
+  #p-cover #banner {
+    display: flex;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    #p-cover #banner #cover-text h1 {
+      font-size: 60px;
+      color: #51738d; }
+    #p-cover #banner #cover-text span {
+      font-size: 24px;
+      color: #51738d; }
   #p-cover #img-container {
     height: 200px;
-    width: 200px; }
+    width: 200px;
+    display: flex;
+    align-items: center; }
     #p-cover #img-container img {
+      -webkit-transform: scaleX(-1);
+      -moz-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      transform: scaleX(-1);
       max-height: 100%;
       max-width: 100%; }
+  #p-cover #apply-button {
+    width: 200px;
+    height: 55px;
+    border-radius: 5px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #51738d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-transition: background-color 0.25s;
+    -moz-transition: background-color 0.25s;
+    transition: background-color 0.25s; }
+  #p-cover #apply-button:hover {
+    background-color: white;
+    cursor: hand; }
 
 #p-about {
   background-color: #FF825B;
   color: white; }
   #p-about .p-content {
     width: 50%; }
+  #p-about a {
+    color: white !important;
+    text-decoration: underline; }
+  #p-about a:visited {
+    color: white !important; }
 
 #p-students {
   background-color: #FEAF66; }
@@ -118,6 +158,8 @@ a:active {
     width: 80%; } }
 /* Animation Classes */
 .fade-in {
-  background-color: white !important; }
+  background-color: #51738d !important; }
+  .fade-in a {
+    color: white !important; }
 
 /*# sourceMappingURL=index.css.map */

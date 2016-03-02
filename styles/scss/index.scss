@@ -1,14 +1,11 @@
 @import "bourbon/bourbon";
 
+$dark-blue: rgba(81, 115, 141, 1);
+
 html, body {
     margin: 0px;
     padding: 0px;
-    background-color: red;
     font-family: "Lato",serif;
-}
-
-a {
-    color: #003262;
 }
 
 a:link{
@@ -29,6 +26,11 @@ a:active {
     position: fixed;
     @include transition(background-color 0.25s);
 
+    a {
+        color: $dark-blue;
+        @include transition(color 0.25s);
+    }
+    
     #h-tabs{ 
        margin-left: auto;
        text-align: right;
@@ -64,6 +66,7 @@ a:active {
     color: white;
     text-align: center;
     margin-bottom: 40px;
+    //-webkit-text-stroke: 1px black;
 }
 
 .p-content{
@@ -98,16 +101,56 @@ a:active {
     padding: 0px !important;
     display: flex;
     flex-direction: row;
-    justify-content: center;
     align-items: center;
     
+    #banner {
+        display: flex; 
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #cover-text  {
+            
+            h1 {
+                font-size: 60px;
+                color: $dark-blue; 
+            }
+
+            span{
+                font-size: 24px;
+                color: $dark-blue;
+            }
+        }
+    }
+
     #img-container {
         height: 200px;
         width: 200px;
+        display: flex;
+        align-items: center;
         img {
+            @include transform(scaleX(-1));
             max-height: 100%;
             max-width: 100%;
         }
+    }
+
+    #apply-button{
+        width: 200px;
+        height: 55px;
+        border-radius: 5px;
+        border-style: solid;
+        border-width: 2px;
+        border-color: $dark-blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        @include transition (background-color 0.25s);
+    }
+
+    #apply-button:hover {
+        background-color: white;
+        cursor: hand;
     }
 }
 
@@ -116,6 +159,15 @@ a:active {
     color: white;
     .p-content {
         width: 50%;
+    }
+
+    a {
+        color: white !important;
+        text-decoration: underline;
+    }
+
+    a:visited {
+        color: white !important;
     }
 }
 
@@ -156,6 +208,9 @@ a:active {
 /* Animation Classes */
 
 .fade-in{
-    background-color: rgba(255, 255, 255, 1) !important;
+    background-color: rgba(81, 115, 141, 1) !important;
+    a {
+        color: white !important;
+    }
 }
 
