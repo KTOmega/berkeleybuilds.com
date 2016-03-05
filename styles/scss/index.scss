@@ -8,6 +8,10 @@ html, body {
     font-family: "Lato",serif;
 }
 
+hr {
+    color: white;
+}
+
 a:link{
     text-decoration: none;
 }
@@ -25,6 +29,7 @@ a:active {
     padding: 5px;
     position: fixed;
     @include transition(background-color 0.25s);
+    z-index: 1;
 
     a {
         color: $dark-blue;
@@ -76,10 +81,19 @@ a:active {
     }
 }
 
+
+.p-gallary-header{    
+    font-size: 25px;
+    text-align: center;
+    color: white;
+    width: 100%;
+}
+
 .p-gallary{
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around; 
+    width: 100%;
 }
 
 .p-gallary-item {
@@ -92,6 +106,15 @@ a:active {
     img {
         height: 100%;
         width: 100%;
+    }
+}
+
+.p-sponsor-item {
+    height: 50px;
+    width: auto;
+    img {
+        max-height: 100%;
+        max-width: 100%;
     }
 }
 
@@ -143,6 +166,7 @@ a:active {
         border-width: 2px;
         border-color: $dark-blue;
         display: flex;
+        margin-top: 2px;
         align-items: center;
         justify-content: center;
         @include transition (background-color 0.25s);
@@ -176,14 +200,7 @@ a:active {
 }
 
 #p-sponsors {
-    background-color: #FF3B32;
-    .p-gallary .p-gallary-item {
-        color: white;
-        background-color: #FF825B;
-        a:link{
-            text-decoration: underline;
-        }
-    }
+    background-color: #ABB7B7;
 }
 
 #p-contact{

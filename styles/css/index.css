@@ -3,6 +3,9 @@ html, body {
   padding: 0px;
   font-family: "Lato",serif; }
 
+hr {
+  color: white; }
+
 a:link {
   text-decoration: none; }
 
@@ -19,7 +22,8 @@ a:active {
   position: fixed;
   -webkit-transition: background-color 0.25s;
   -moz-transition: background-color 0.25s;
-  transition: background-color 0.25s; }
+  transition: background-color 0.25s;
+  z-index: 1; }
   #header a {
     color: #51738d;
     -webkit-transition: color 0.25s;
@@ -58,10 +62,17 @@ a:active {
   .p-content p {
     font-size: 20px; }
 
+.p-gallary-header {
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  width: 100%; }
+
 .p-gallary {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  width: 100%; }
 
 .p-gallary-item {
   width: 200px;
@@ -73,6 +84,13 @@ a:active {
   .p-gallary-item img {
     height: 100%;
     width: 100%; }
+
+.p-sponsor-item {
+  height: 50px;
+  width: auto; }
+  .p-sponsor-item img {
+    max-height: 100%;
+    max-width: 100%; }
 
 #p-cover {
   height: 400px;
@@ -114,6 +132,7 @@ a:active {
     border-width: 2px;
     border-color: #51738d;
     display: flex;
+    margin-top: 2px;
     align-items: center;
     justify-content: center;
     -webkit-transition: background-color 0.25s;
@@ -138,12 +157,7 @@ a:active {
   background-color: #FEAF66; }
 
 #p-sponsors {
-  background-color: #FF3B32; }
-  #p-sponsors .p-gallary .p-gallary-item {
-    color: white;
-    background-color: #FF825B; }
-    #p-sponsors .p-gallary .p-gallary-item a:link {
-      text-decoration: underline; }
+  background-color: #ABB7B7; }
 
 #p-contact {
   background-color: #6c7175;
