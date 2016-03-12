@@ -200,7 +200,10 @@ a:active {
 }
 
 #p-sponsors {
-    background-color: #ABB7B7;
+    background-color: #EEEEEE;
+    .p-header, .p-gallary-header {
+        color: $dark-blue;
+    }
 }
 
 #p-contact{

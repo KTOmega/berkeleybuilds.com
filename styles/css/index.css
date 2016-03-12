@@ -157,7 +157,9 @@ a:active {
   background-color: #FEAF66; }
 
 #p-sponsors {
-  background-color: #ABB7B7; }
+  background-color: #EEEEEE; }
+  #p-sponsors .p-header, #p-sponsors .p-gallary-header {
+    color: #51738d; }
 
 #p-contact {
   background-color: #6c7175;
