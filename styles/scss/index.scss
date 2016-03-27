@@ -48,6 +48,7 @@ a:active {
     }
 
     #h-title{
+        display: none;
         font-size: 30px;
     }
 }
@@ -178,9 +179,9 @@ a:active {
 }
 
 #p-sponsors {
-    background-color: #D9CEB2;
+    background-color: #DADFE1;
     .p-header, .p-gallary-header {
-        color: $dark-blue;
+        color: #6C7A89;
     }
 }
 
@@ -213,6 +214,9 @@ a:active {
     background-color: #405DA0 !important;
     a {
         color: white !important;
+    }
+    #h-title {
+        display: inline !important;
     }
 }
 

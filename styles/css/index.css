@@ -37,6 +37,7 @@ a:active {
     margin-right: 10px;
     font-size: 24px; }
   #header #h-title {
+    display: none;
     font-size: 30px; }
 
 .content {
@@ -140,9 +141,9 @@ a:active {
   background-color: #948C75; }
 
 #p-sponsors {
-  background-color: #D9CEB2; }
+  background-color: #DADFE1; }
   #p-sponsors .p-header, #p-sponsors .p-gallary-header {
-    color: #405DA0; }
+    color: #6C7A89; }
 
 #p-contact {
   background-color: #6c7175;
@@ -164,5 +165,7 @@ a:active {
   background-color: #405DA0 !important; }
   .fade-in a {
     color: white !important; }
+  .fade-in #h-title {
+    display: inline !important; }
 
 /*# sourceMappingURL=index.css.map */
