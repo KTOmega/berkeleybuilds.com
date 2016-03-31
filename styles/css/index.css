@@ -114,7 +114,6 @@ a:active {
     border-width: 2px;
     border-color: white;
     display: flex;
-    margin-top: 2px;
     margin: auto;
     align-items: center;
     justify-content: center;
@@ -130,30 +129,45 @@ a:active {
     color: #405DA0;
     cursor: hand; }
   #p-about .p-header {
-    color: white !important; }
-  #p-about .partner-nonprofit {
-    height: 100px !important; }
+    color: white; }
+  #p-about #np-gallary {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-top: 10px; }
+    #p-about #np-gallary .np-card {
+      margin-top: 10px;
+      width: 200px; }
+      #p-about #np-gallary .np-card .logo {
+        width: 100%;
+        height: 100px;
+        text-align: center; }
+        #p-about #np-gallary .np-card .logo img {
+          max-height: 100%;
+          max-width: 100%; }
+      #p-about #np-gallary .np-card .text {
+        margin-top: 5px;
+        width: 100%;
+        color: white; }
 
 #p-hosts {
   background-color: #DADFE1; }
 
-#p-partners, #p-about {
+#p-partners {
   background-color: #DADFE1; }
-  #p-partners .p-header, #p-about .p-header, #p-partners .p-gallary-header, #p-about .p-gallary-header {
+  #p-partners .p-header, #p-partners .p-gallary-header {
     color: #6C7A89; }
-  #p-partners .p-partner-item, #p-about .p-partner-item {
+  #p-partners .p-partner-item {
     width: auto;
     align-items: center; }
-    #p-partners .p-partner-item img, #p-about .p-partner-item img {
+    #p-partners .p-partner-item img {
       max-height: 100%;
       max-width: 100%; }
-    #p-partners .p-partner-item #ps, #p-about .p-partner-item #ps {
+    #p-partners .p-partner-item #ps {
       margin-top: 20px; }
-  #p-partners .partner-gold, #p-about .partner-gold {
+  #p-partners .partner-big {
     height: 60px; }
-  #p-partners .partner-silver, #p-about .partner-silver {
-    height: 50px; }
-  #p-partners .partner-nonprofit, #p-about .partner-nonprofit {
+  #p-partners .partner-medium {
     height: 50px; }
 
 #p-contact {

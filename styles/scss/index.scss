@@ -130,8 +130,6 @@ a:active {
 
 #p-about {
 
-    @extend #p-partners;
-
     background-color: #264896 !important;
     color: white;
 
@@ -151,7 +149,6 @@ a:active {
         border-width: 2px;
         border-color: white;
         display: flex;
-        margin-top: 2px;
         margin: auto;
         align-items: center;
         justify-content: center;
@@ -167,12 +164,36 @@ a:active {
     }
 
     .p-header {
-        color: white !important;
+        color: white;
     }
 
-    .partner-nonprofit {
-        height: 100px !important;
+    #np-gallary {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-top: 10px;
+        
+        .np-card{
+            margin-top: 10px;
+            width: 200px;
+            .logo {
+                width: 100%;
+                height: 100px;
+                text-align: center;
+                    img {
+                        max-height: 100%;
+                        max-width: 100%;
+                    }
+            }
+            .text {
+                margin-top: 5px;
+                width: 100%;
+                color: white;
+            }
+        }
     }
+
+    
 
 }
 
@@ -199,15 +220,11 @@ a:active {
         }
     }
 
-    .partner-gold{
+    .partner-big{
         height: 60px;
     }
 
-    .partner-silver {
-        height: 50px;
-    }
-
-    .partner-nonprofit {
+    .partner-medium {
         height: 50px;
     }
 }
