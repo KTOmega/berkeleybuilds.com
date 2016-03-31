@@ -73,25 +73,20 @@ a:active {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  width: 100%; }
+  width: 100%;
+  margin: 25px; }
 
 .p-gallary-item {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   display: flex;
   align-items: center;
   text-align: center;
-  font-size: 20px; }
+  font-size: 20px;
+  margin: 20px; }
   .p-gallary-item img {
     height: 100%;
     width: 100%; }
-
-.p-sponsor-item {
-  height: 50px;
-  width: auto; }
-  .p-sponsor-item img {
-    max-height: 100%;
-    max-width: 100%; }
 
 #p-cover {
   height: 400px;
@@ -105,10 +100,8 @@ a:active {
     max-height: 75%; }
 
 #p-about {
-  background-color: #264896;
+  background-color: #264896 !important;
   color: white; }
-  #p-about .p-content {
-    width: 50%; }
   #p-about a {
     color: white !important; }
   #p-about a:visited {
@@ -136,14 +129,32 @@ a:active {
     background-color: white;
     color: #405DA0;
     cursor: hand; }
+  #p-about .p-header {
+    color: white !important; }
+  #p-about .partner-nonprofit {
+    height: 100px !important; }
 
-#p-students {
-  background-color: #948C75; }
-
-#p-sponsors {
+#p-hosts {
   background-color: #DADFE1; }
-  #p-sponsors .p-header, #p-sponsors .p-gallary-header {
+
+#p-partners, #p-about {
+  background-color: #DADFE1; }
+  #p-partners .p-header, #p-about .p-header, #p-partners .p-gallary-header, #p-about .p-gallary-header {
     color: #6C7A89; }
+  #p-partners .p-partner-item, #p-about .p-partner-item {
+    width: auto;
+    align-items: center; }
+    #p-partners .p-partner-item img, #p-about .p-partner-item img {
+      max-height: 100%;
+      max-width: 100%; }
+    #p-partners .p-partner-item #ps, #p-about .p-partner-item #ps {
+      margin-top: 20px; }
+  #p-partners .partner-gold, #p-about .partner-gold {
+    height: 60px; }
+  #p-partners .partner-silver, #p-about .partner-silver {
+    height: 50px; }
+  #p-partners .partner-nonprofit, #p-about .partner-nonprofit {
+    height: 50px; }
 
 #p-contact {
   background-color: #6c7175;
@@ -157,9 +168,6 @@ a:active {
   #p-cover #background img {
     max-height: 100%;
     max-width: 100%; } }
-@media (max-width: 700px) {
-  #p-about .p-content {
-    width: 80%; } }
 /* Animation Classes */
 .fade-in {
   background-color: #405DA0 !important; }

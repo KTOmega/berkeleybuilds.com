@@ -4,11 +4,7 @@ berkeleybuilds.com
 
 ## TODO
 
-* [ ] Edit and use the real Build Berkeley logo for cover photo
-
-* [ ] Bear overlaps the header lol
-
-* [ ] Shorten the *About* description (a lot)
+* [x] Edit and use the real Build Berkeley logo for cover photo
 
 * [ ] Underline selected tabs in navbar
 
