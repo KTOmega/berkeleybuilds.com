@@ -159,20 +159,23 @@ a:active {
     color: #6C7A89; }
   #p-partners .p-partner-item {
     width: auto;
-    align-items: center; }
+    align-items: center;
+    opacity: 0.75; }
     #p-partners .p-partner-item img {
       max-height: 100%;
       max-width: 100%; }
     #p-partners .p-partner-item #ps {
       margin-top: 20px; }
+  #p-partners .p-partner-item:hover {
+    opacity: 1; }
   #p-partners .partner-big {
     height: 60px; }
   #p-partners .partner-medium {
     height: 50px; }
 
 #p-contact {
-  background-color: #6c7175;
-  color: white; }
+  background-color: #DADFE1;
+  color: #6C7A89; }
 
 /* Media Queries */
 @media (max-width: 540px) {

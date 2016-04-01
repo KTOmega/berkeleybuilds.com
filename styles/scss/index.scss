@@ -203,12 +203,16 @@ a:active {
 
 #p-partners {
     background-color: #DADFE1;
+    
     .p-header, .p-gallary-header {
         color: #6C7A89;
     }
+    
     .p-partner-item {
         width: auto;
         align-items: center;
+        opacity: 0.75;
+
         img {
             max-height: 100%;
             max-width: 100%;
@@ -218,6 +222,10 @@ a:active {
             //ps logo has odd shape
             margin-top: 20px;
         }
+    }
+
+    .p-partner-item:hover{
+        opacity: 1;
     }
 
     .partner-big{
@@ -231,8 +239,8 @@ a:active {
 
 
 #p-contact{
-    background-color: #6c7175;
-    color: white;
+    background-color: #DADFE1;
+    color: #6C7A89;
 }
 
 /* Media Queries */
