@@ -88,16 +88,20 @@ a:active {
     height: 100%;
     width: 100%; }
 
-#p-cover {
+#p-cover, #p-schedule {
   height: 400px;
   background-color: #6CACDC;
   padding: 0px !important;
   display: flex;
   justify-content: space-around;
   text-align: center; }
-  #p-cover #background img {
+  #p-cover #background img, #p-schedule #background img {
     max-width: 75%;
     max-height: 75%; }
+
+#p-schedule {
+  height: auto;
+  background-color: #68A2C8; }
 
 #p-about {
   background-color: #264896 !important;
@@ -182,7 +186,7 @@ a:active {
   #h-tabs {
     display: none; }
 
-  #p-cover #background img {
+  #p-cover #background img, #p-schedule #background img {
     max-height: 100%;
     max-width: 100%; } }
 /* Animation Classes */

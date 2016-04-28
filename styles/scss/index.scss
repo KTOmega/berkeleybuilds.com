@@ -128,6 +128,12 @@ a:active {
 
 }
 
+#p-schedule {
+    height: auto;
+    background-color: #68A2C8;
+    @extend #p-cover;
+}
+
 #p-about {
 
     background-color: #264896 !important;
