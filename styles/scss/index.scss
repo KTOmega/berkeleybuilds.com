@@ -134,6 +134,13 @@ a:active {
     @extend #p-cover;
 }
 
+
+#p-map {
+    height: auto;
+    background-color: white;
+    @extend #p-cover;
+}
+
 #p-about {
 
     background-color: #264896 !important;
